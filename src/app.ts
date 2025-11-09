@@ -32,12 +32,13 @@ app.use("/api", appRouter);
 
 // stating point
 app.get("/", (req: Request, res: Response) => {
-  res.send("Remedy Server Is Runnig........");
+  res.send("Welcome to docker universe..!!!");
 });
 
 // global error handler
 app.use(globalErrorHandler);
 app.use(notFound);
+
 
 // export app
 export default app;
